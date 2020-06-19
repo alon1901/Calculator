@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#199FDB"
+        android:gravity="center_horizontal"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/txtCalculation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCurrentNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="#FF5722"
+                android:layoutDirection="rtl"
+                android:padding="@android:dimen/app_icon_size"
+                android:textColor="@android:color/background_light"
+                android:textDirection="locale"
+                android:textSize="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnEquals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="20dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/txtCurrentNumber"
+                app:layout_constraintStart_toEndOf="@+id/txtCurrentNumber"
+                app:layout_constraintTop_toTopOf="@+id/txtCurrentNumber"
+                app:srcCompat="@drawable/equal" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btnDivide"
+                android:layout_width="93dp"
+                android:layout_height="92dp"
+                app:srcCompat="@drawable/divide" />
+
+            <ImageButton
+                android:id="@+id/btnNine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/nine" />
+
+            <ImageButton
+                android:id="@+id/btnEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/eight" />
+
+            <ImageButton
+                android:id="@+id/btnSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/seven" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btnMultiply"
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/multiply" />
+
+            <ImageButton
+                android:id="@+id/btnSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/six" />
+
+            <ImageButton
+                android:id="@+id/btnFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/five" />
+
+            <ImageButton
+                android:id="@+id/btnFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/four" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal|center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btnSubtract"
+                android:layout_width="96dp"
+                android:layout_height="93dp"
+                app:srcCompat="@drawable/subtract" />
+
+            <ImageButton
+                android:id="@+id/btnThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/three" />
+
+            <ImageButton
+                android:id="@+id/btnTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/two" />
+
+            <ImageButton
+                android:id="@+id/btnOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/one" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btnAdd"
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/plus" />
+
+            <ImageButton
+                android:id="@+id/btnZero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/zero" />
+
+            <ImageButton
+                android:id="@+id/btnClear"
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+        </TableRow>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
